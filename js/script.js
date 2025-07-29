@@ -10,13 +10,12 @@ function addTask() {
     const taskList = document.getElementById('taskList');
     const listItem = document.createElement('li');
 
-    // Task text span
     const taskSpan = document.createElement('span');
     taskSpan.textContent = taskText;
-
+    
     // Complete button
     const completeButton = document.createElement('button');
-    completeButton.innerHTML = '✔'; // Green checkmark icon
+    completeButton.innerHTML = '✔'; 
     completeButton.onclick = () => {
         taskSpan.classList.toggle('completed');
     };
@@ -36,5 +35,5 @@ function addTask() {
 
     taskList.appendChild(listItem);
 
-    taskInput.value = ''; // Clear input field
+    taskInput.value = ''; 
 }
